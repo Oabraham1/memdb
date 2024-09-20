@@ -37,3 +37,11 @@ graph TD;
     Cache Store[(HashMap)];
     Error Handling[(Logging & Error Codes)];
 ```
+```mermaid
+graph TD;
+    TCP Server-->Cache Store;
+    Cache Store-->Error Handling;
+    Error Handling-->Storage Engine;
+    Strorage Engine-->Indexing;
+    Indexing-->Node Replication;
+```
