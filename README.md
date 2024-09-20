@@ -25,23 +25,5 @@ MemDB is an attempt to create a simple in-memory caching key-value store using R
 *   **In-Memory Storage**: Fast and efficient storage for caching purposes.
 *   **Key-Value Store**: Store and retrieve data using unique keys.
 *   **Simple TCP Server**: Accepts connections and handles basic CRUD operations.
-
-
-### Architecture
-
-
-```mermaid
-graph TD;
-    TCP Server --> Cache Store;
-    Cache Store --> Error Handling;
-    Cache Store[(HashMap)];
-    Error Handling[(Logging & Error Codes)];
-```
-```mermaid
-graph TD;
-    TCP Server-->Cache Store;
-    Cache Store-->Error Handling;
-    Error Handling-->Storage Engine;
-    Strorage Engine-->Indexing;
-    Indexing-->Node Replication;
-```
+*   **Indexing**: Allows creation of indexes on data for even faster querying.
+*   **Node Replication**: Support for 3-node replica with 1 leader and 2 followers in a 3-node distributed system.
