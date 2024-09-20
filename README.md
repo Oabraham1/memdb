@@ -36,3 +36,4 @@ graph TD
     Cache Store --> Error Handling
     Cache Store[(HashMap)]
     Error Handling[(Logging & Error Codes)]
+```
