@@ -1,0 +1,7 @@
+[package]
+name = "memdb"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+memdb-socket = { path = "memdb-socket" }
