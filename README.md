@@ -32,8 +32,8 @@ MemDB is an attempt to create a simple in-memory caching key-value store using R
 
 ```mermaid
 graph TD
-    TCP Server --> Cache Store
-    Cache Store --> Error Handling
-    Cache Store[(HashMap)]
-    Error Handling[(Logging & Error Codes)]
+    TCP Server --> Cache Store;
+    Cache Store --> Error Handling;
+    Cache Store[(HashMap)];
+    Error Handling[(Logging & Error Codes)];
 ```
